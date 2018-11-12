@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Ref Constraints for Table CUSTOMER_VEHICLE
+--------------------------------------------------------
+
+  ALTER TABLE "CUSTOMER_VEHICLE" ADD CONSTRAINT "CUSTOMER_VEHICLE_FK1" FOREIGN KEY ("CUSTOMER_ID")
+	  REFERENCES "CUSTOMER" ("CUSTOMER_ID") ENABLE;
+  ALTER TABLE "CUSTOMER_VEHICLE" ADD CONSTRAINT "CUSTOMER_VEHICLE_FK2" FOREIGN KEY ("VEHICLE_ID")
+	  REFERENCES "VEHICLE" ("ID") ENABLE;
